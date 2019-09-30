@@ -26,16 +26,16 @@ function isAcing(grade) {
   return grade>92;
 }
 
-function isStudent() {
-
+function isStudent(student) {
+  return student === 'student'
 }
 
-function isTeacher() {
-
+function isTeacher(teacher) {
+  return teacher === 'teacher'
 }
 
-function isAdmin() {
-
+function isAdmin(admin) {
+  return admin === 'admin'
 }
 
 function isElementary() {
