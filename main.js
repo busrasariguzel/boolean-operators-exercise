@@ -38,20 +38,20 @@ function isAdmin(admin) {
   return admin === 'admin'
 }
 
-function isElementary() {
-
+function isElementary(schoolLevel) {
+  return schoolLevel === 'elementary'
 }
 
-function notAnElementarySchoolAdministrator() {
-
+function notAnElementarySchoolAdministrator(role, level) {
+  return role !== 'elementary' || level !== 'admin'
 }
 
-function isMiddleSchoolTeacher() {
-
+function isMiddleSchoolTeacher(role, level) {
+  return role === 'teacher' && level>=6 && level<=8;
 }
 
-function differentPeople() {
-
+function differentPeople(busra, fatma) {
+  return busra === fatma;
 }
 
 module.exports = {
