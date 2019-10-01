@@ -50,8 +50,8 @@ function isMiddleSchoolTeacher(role, level) {
   return role === 'teacher' && level>=6 && level<=8;
 }
 
-function differentPeople(busra, fatma) {
-  return busra === fatma;
+function differentPeople(name1, name2) {
+  return name1 === name2;
 }
 
 module.exports = {
